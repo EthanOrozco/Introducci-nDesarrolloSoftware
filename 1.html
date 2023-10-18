@@ -13,12 +13,42 @@
 </head>
 <style>
     p:hover {
-        color:aquamarine;
+        color:rgba(255, 236, 127, 0.712);
         font-size: 1.5em;
     }
+
+    .item:hover{
+        border: 1px solid black;
+        border-radius: 2px;
+    }
+
+    h1#main{
+        text-shadow: 5px 2px 12px rgb(24, 109, 96);
+    }
+    
+    button:first-of-type{
+        padding: 5px 20px;
+        background-color: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2t2ZWVwdmsxbGQ0dHpwOWk5NnNqZWZkdXA3aTlmbXRhN2o2Ymx6OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hFQLTF1Ml5RHIMSs12/giphy.gif');
+        background-size: cover;
+        color: purple;
+        border: none;
+        border-radius: 7px;
+        font-size: 14px;
+        font: 1.5em 'Times New Roman', Times, serif;
+        transition:  0.5s ease;
+    }
+
+    button:first-of-type:hover{
+        transform:translateY(-10px) rotatex(2turn);
+    }
+    button:first-of-type:    
 </style>
+
 <body>
     <h1 id="main">Test</h1>
+    <h2>test</h2>
+    <button>Registrate</button>
+    <div class="fire test3" id="test"></div>
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, voluptatum voluptas? Maxime facilis nesciunt distinctio adipisci ipsa accusamus suscipit vero alias! Facilis, dignissimos doloremque? Sequi dignissimos blanditiis sunt, distinctio exercitationem aperiam veniam beatae voluptatem voluptas qui natus magnam expedita necessitatibus nisi illum, excepturi placeat harum saepe iusto repellendus sed cupiditate?
     </p>
@@ -37,16 +67,17 @@
         <li>Elemento 3</li>
     </ol>
     <ul>
-        <li>
+        <li class="item">
             html
             <!-- ol>li{item$}*4-->
-            <ol type="I">
-                <li title="uno">1</li>
-                <li>2</li>
+            <ol type="a">
+                <li class="item" title="uno">1</li>
+                <li class="item">2</li>
+                <li class="item">3</li>
             </ol>
         </li>
-        <li>CSS</li>
-        <li>js</li>
+        <li class="item">CSS</li>
+        <li class="item">js</li>
     </ul>
 </body>
 
